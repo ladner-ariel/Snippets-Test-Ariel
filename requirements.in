@@ -1,0 +1,10 @@
+celery==5.4.0
+click-didyoumean==0.3.1
+click-plugins==1.1.1
+click-repl==0.3.0
+django-crispy-forms==2.3.0
+django-heroku==0.3.1
+gunicorn==23.0.0
+Pygments==2.18
+python-decouple==3.8
+redis==5.1.1
