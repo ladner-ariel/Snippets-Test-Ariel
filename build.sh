@@ -11,4 +11,4 @@ python manage.py collectstatic --no-input
 # Apply any outstanding database migrations
 python manage.py migrate
 
-python -m gunicorn django_snippets.wsgi
+python -m gunicorn django_snippets.wsgi:application -k uvicorn.workers.UvicornWorker
