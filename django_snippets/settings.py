@@ -76,10 +76,23 @@ WSGI_APPLICATION = "django_snippets.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
-DATABASES = {
+# mysql://root:DBZNLLpzhWXakFhDYIicHOLfGfWcmaJa@autorack.proxy.rlwy.net:46114/railway
+
+"""DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
+    }
+}"""
+
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.mysql",
+        "NAME": 'railway',
+        "USER": 'root',
+        "PASSWORD": 'DBZNLLpzhWXakFhDYIicHOLfGfWcmaJa',
+        "HOST": 'autorack.proxy.rlwy.net',
+        "PORT": '46114',
     }
 }
 
