@@ -3,7 +3,6 @@ from django.views import View
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .forms import SnippetForm
 from . import models
-from .tasks import sendEmailInSnippetCreation
 
 class SnippetAdd(LoginRequiredMixin, View):
     """
